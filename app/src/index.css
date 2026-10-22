@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Paleta extraída del RAE de rappi.com.co */
+  --color-rappi: #ff441f;
+  --color-rappi-dark: #e03a17;
+  --color-rappi-light: #fff2e5;
+  --color-mint: #29d884;
+  --color-mint-dark: #21b16c;
+  --color-mint-light: #e9fcf2;
+  --color-ink: #2e2c36;
+  --color-grayish: #6a696e;
+  --color-line: #e6ebf1;
+  --color-frost: #f7f8f9;
+  --color-violet-brand: #5e00be;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink font-sans antialiased;
+}
+
+/* Scrollbar horizontal para carruseles */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
